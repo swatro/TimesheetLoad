@@ -10,6 +10,8 @@ deploy:
   role: arn:aws:iam::188709785926:role/service-role/stacey
   runtime: python3.6
   handler_name: lambda_handler
+  module_name: TimesheetLoad
+  zip:  ${TRAVIS_BUILD_DIR}/build/distributions/TimesheetLoad.zip
   access_key_id:
     secure: Lp5Rd0MGpJUofJkF8ynfeY96yeqAYHk8q+esaqz31JJoriONJbEASgODfBZWhK3/92h8zQovfW+WyFozqoCgdgTH0itJkMDz4ePI159A0SIsK9NPRGrGK2C1SmEmHGUfHiUMJJawQpIz4RchT43XRsfCN8+h8ssHC9YZVsOC6/ea8zhVVydfQFLqrHCfWCUk5yu0hIwe53v2W+VtPejTnJ3F3w9a3XHVkIDCmVlmCNwZjCXmpFnJk8074r361yuklmZuquhK4MPLYFNPrhyslWAegd+Vm3c4I8yeS26GYpzEvcJgnSB1RiXVlEBdkK7SUyLM4BUMKfKZED4zntfgnF0NngyWgejlYFm5aBWwNU0Ma8A0cIKDUtSEB7PHURhQ4I11Ig+XLcwMjGVE1bcsJQG9VrlKQw2f2qv55y+PpvoqID2BSGerPhEw9d8QcJcd4+8gNhb6AViJEV3M0tY/BVFm82UiVedJKJUKDSrHeck9tht1zTyx6edxDywbWcygGkBnAF7ku29xylxxNb5dN+rX4+1p2yEZtPoT+hNWeu4lLsTZInJDnoymP0gADUoyvNy+5oG3Yqe8uW5ST8uotABxK4DHnfdaIrrov9VoMy/w/BSpKoI2Zua0yRWFdz2wdv8G8HIE3r/S4gFuWFuGlU5DXZdNLGCb0Rk3QoPbGk0=
   secret_access_key:

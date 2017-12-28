@@ -14,3 +14,14 @@ However the field below could change as the code changes.
 ## Trigger: 
 Current the lambda is triggered based on time using the cron expression `cron(0 0 ? * SAT *)`. This is equivalent to every SAT at
 midnight UTC. 
+
+## Things not done in code :(
+* Permissions on user to allow deployment
+* Trigger rule
+
+## Todo List and Open Questions:
+- [x] Build a hello world lamdba
+- [x] Add automatic deploy for lambda
+- [x] Add automatic trigger for lamdba based on time
+- [ ] Add writing to file in Google (or maybe Amazon instead?)
+- [ ] Can the trigger rule be done in code?

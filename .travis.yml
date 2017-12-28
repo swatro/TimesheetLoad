@@ -7,7 +7,7 @@ deploy:
   provider: lambda
   function_name: strideHours
   region: us-east-2
-  role: arn:aws:iam::188709785926:role/lambda_basic_execution
+  role: arn:aws:iam::188709785926:role/service-role/stacey
   runtime: python3.6
   handler_name: lambda_handler
   access_key_id:
